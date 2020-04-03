@@ -15,34 +15,44 @@
   <script src="https://kit.fontawesome.com/b03a6f87f6.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
-    <a href="/"><img src="/images/logo.svg" alt="Ping logo" width="86" height="26"></a>
+  <header class="header">
+    <div class="container">
+      <a class="logo" href="/"><img src="/images/logo.svg" alt="Ping logo" width="86" height="26"></a>
+    </div>
   </header>
 
-  <main>
-    <h1>We are launching soon!</h1>
-    <p>Subscribe and get notified</p>
+  <main class="main">
+    <div class="container">
+      <h1 class="title">We are launching <span class="title-bold">soon!</span></h1>
+      <p class="subtitle">Subscribe and get notified</p>
 
-    <form>
-      <label>
-        <span class="sr-only">Your email address</span>
-        <input type="email" name="email" placeholder="Your email address" required>
-      </label>
+      <form class="form">
+        <label class="field">
+          <span class="sr-only">Your email address</span>
+          <input class="field-input" type="email" name="email" placeholder="Your email address" required>
+        </label>
 
-      <button>Notify me</button>
-    </form>
+        <button class="button">Notify me</button>
+      </form>
+    </div>
 
-    <img src="/images/illustration-dashboard.png" alt="Ping dashboard illustration" width="1280" height="782">
+    <img class="hero" src="/images/illustration-dashboard.png" alt="Ping dashboard illustration" width="1280"
+         height="782">
   </main>
 
-  <footer>
-    <ul>
-      <li><a href="#"><span class="fab fa-facebook-f"></span><span class="sr-only">Ping facebook page</span></a></li>
-      <li><a href=""><span class="fab fa-twitter"></span><span class="sr-only">Ping twitter page</span></a></li>
-      <li><a href=""><span class="fab fa-instagram"></span><span class="sr-only">Ping instagram page</span></a></li>
-    </ul>
+  <footer class="footer">
+    <div class="container">
+      <ul class="socials">
+        <li class="social"><a class="social-link" href="#"><span class="fab fa-facebook-f"></span><span class="sr-only">Ping facebook page</span></a>
+        </li>
+        <li class="social"><a class="social-link" href=""><span class="fab fa-twitter"></span><span class="sr-only">Ping twitter page</span></a>
+        </li>
+        <li class="social"><a class="social-link" href=""><span class="fab fa-instagram"></span><span class="sr-only">Ping instagram page</span></a>
+        </li>
+      </ul>
 
-    <small>&copy; Copyright Ping. All rights reserved.</small>
+      <small class="copy">&copy; Copyright Ping. All rights reserved.</small>
+    </div>
   </footer>
 </body>
 </html>
