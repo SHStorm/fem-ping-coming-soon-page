@@ -7,14 +7,42 @@
   <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
 
   <title>Frontend Mentor | Ping coming soon page</title>
+
+  <link rel="stylesheet" href="/styles/index.css">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,600;0,700;1,300&display=swap"
+        rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/b03a6f87f6.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  We are launching soon!
+  <header>
+    <a href="/"><img src="/images/logo.svg" alt="Ping logo" width="86" height="26"></a>
+  </header>
 
-  Subscribe and get notified
+  <main>
+    <h1>We are launching soon!</h1>
+    <p>Subscribe and get notified</p>
 
-  Notify Me
+    <form>
+      <label>
+        <span class="sr-only">Your email address</span>
+        <input type="email" name="email" placeholder="Your email address" required>
+      </label>
 
-  &copy; Copyright Ping. All rights reserved.
+      <button>Notify me</button>
+    </form>
+
+    <img src="/images/illustration-dashboard.png" alt="Ping dashboard illustration" width="1280" height="782">
+  </main>
+
+  <footer>
+    <ul>
+      <li><a href="#"><span class="fab fa-facebook-f"></span><span class="sr-only">Ping facebook page</span></a></li>
+      <li><a href=""><span class="fab fa-twitter"></span><span class="sr-only">Ping twitter page</span></a></li>
+      <li><a href=""><span class="fab fa-instagram"></span><span class="sr-only">Ping instagram page</span></a></li>
+    </ul>
+
+    <small>&copy; Copyright Ping. All rights reserved.</small>
+  </footer>
 </body>
 </html>
