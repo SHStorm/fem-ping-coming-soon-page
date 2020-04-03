@@ -28,7 +28,7 @@ img {
   height: auto;
 }
 
-small, button, input, a {
+strong, small, button, input, a {
   color: inherit;
   font: inherit;
   text-decoration: none;
@@ -93,6 +93,8 @@ body {
 }
 
 .field {
+  position: relative;
+
   display: block;
   margin-bottom: 1rem;
 }
@@ -114,6 +116,28 @@ body {
   border-color: #4f7df3;
 }
 
+.field.invalid > .field-input {
+  border-color: #ff5263;
+}
+
+.error-message {
+  position: absolute;
+
+  display: none;
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem;
+
+  color: #ff5263;
+  font-size: 1rem;
+  font-style: italic;
+  letter-spacing: 0.02rem;
+}
+
+.field.invalid > .error-message {
+  display: block;
+}
+
 .button {
   color: #ffffff;
   font-weight: 600;
@@ -126,6 +150,11 @@ body {
 
 .button:hover, .button:focus {
   background-color: #7195f5;
+}
+
+.field.invalid + .button {
+  position: relative;
+  top: 3.2rem;
 }
 
 .hero {
@@ -220,6 +249,7 @@ body {
 
   .form {
     flex-direction: row;
+    align-items: flex-start;
 
     font-size: 1.6rem;
   }
@@ -236,6 +266,17 @@ body {
 
   .field-input {
     padding-left: 3rem;
+  }
+
+  .error-message {
+    margin: 0.8rem 3rem 0;
+
+    font-size: 1.2rem;
+    text-align: left;
+  }
+
+  .field.invalid + .button {
+    position: static;
   }
 
   .hero {

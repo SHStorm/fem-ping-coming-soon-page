@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@0,300;0,600;0,700;1,300&display=swap"
         rel="stylesheet">
 
+  <script src="/scripts/index.js" defer></script>
   <script src="https://kit.fontawesome.com/b03a6f87f6.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -26,10 +27,11 @@
       <h1 class="title">We are launching <span class="title-bold">soon!</span></h1>
       <p class="subtitle">Subscribe and get notified</p>
 
-      <form class="form">
-        <label class="field">
+      <form id="form" class="form">
+        <label id="email-field" class="field">
           <span class="sr-only">Your email address</span>
           <input class="field-input" type="email" name="email" placeholder="Your email address" required>
+          <strong class="error-message">Please provide a valid email address</strong>
         </label>
 
         <button class="button">Notify me</button>
