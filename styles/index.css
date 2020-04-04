@@ -201,19 +201,19 @@ body {
   font-size: 1rem;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 31.25rem) {
   html {
     font-size: 85%;
   }
 }
 
-@media (min-width: 600px) {
+@media (min-width: 37.5rem) {
   html {
     font-size: 100%;
   }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 50rem) {
   html {
     font-size: 62.5%;
   }
